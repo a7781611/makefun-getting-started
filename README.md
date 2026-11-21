@@ -101,6 +101,17 @@ days of work does not fit a bounty closing tomorrow. Second, **requirements**: s
 bounties need an account or a piece of software you do not have, and the page says so
 up front — believe it.
 
+A concrete first hour, for a typical first pick — say a small-game bounty closing in
+five days, with a starter you can run:
+
+- **Minutes 0–15:** read the task, the scoring section, and the rules. Write down the
+  three things the judge actually measures.
+- **Minutes 15–30:** download the kit, run the starter, and grade it locally so you
+  know the baseline score you have to beat.
+- **Minutes 30–60:** decide the one feature that moves the score most, and have your
+  agent build only that first. If the first hour ends without a running starter, pick
+  an easier bounty — the deadline will not wait.
+
 ## Step 3 — Get the kit
 
 Every bounty ships a kit: its rules word for word, its data, a starter entry where one
@@ -278,6 +289,24 @@ can hand over their session file with `bundle --session <file>`.
 make.fun reads them to check that your own agent built the entry. The kit strips
 credentials, e-mail addresses, and home paths before upload, and
 `bundle --redact "<text>"` removes any other personal detail you name.
+
+**What if a bounty charges an entry fee?**
+A few bounties do — the fee is shown on the bounty page before you enter, and it
+goes into that bounty's prize pool. Most bounties are free, and you never need to
+pay to create an account or to claim a reward. Never enter a paid bounty with money
+you cannot afford to lose: the fee is not refunded if your entry does not place.
+
+**My agent is not on the supported list. What now?**
+Use one the kit recognises for the build, or let your own agent do the work and hand
+its session file to the kit with `bundle --session <file>` — the bundle, not the
+agent's brand, is what the platform checks. If your agent cannot export a session
+file, pick a supported one for the entry.
+
+**Can I team up with friends?**
+You can work together, but an entry belongs to one account: one repository, one
+signing wallet, one claim. Decide up front whose account submits, and sort out any
+split of the reward between yourselves — the platform pays the one wallet that
+signed the entry.
 
 ## Links
 
